@@ -14,23 +14,29 @@
     <div class=title-home>
         <h1>Keystone Medical Wellness</h1>
     </div>
-    <div class=home>
-        <div class="background"></div>
+    <div class=container4>
+        <p>Discover the best doctors in your area.</p>
     </div>
-    
+    <!-- <div class=gif>
+        <img src="./images/healthpeople.gif" alt="health people">
+    </div> -->
+    <!-- <div class=home>
+        <div class="background"></div>
+    </div> -->
+
     <left>
         <?PHP
-            include 'index.php';
-            include 'connection.php';
-            $link = mysqli_connect('127.0.0.1', 'root', 'Potato123');
+        include 'index.php';
+        include 'connection.php';
+        $link = mysqli_connect('127.0.0.1', 'root', 'Potato123');
 
-            if (!$link) {
-                die("Cannot pull up all doctor information! " . mysqli_error());
-            } else {
-                echo "Here are all the doctors serving this office! <br>";
-            }
+        if (!$link) {
+            die("Cannot pull up all doctor information! " . mysqli_error());
+        } else {
+            echo "Here are all the doctors serving this office! <br>";
+        }
 
-            ?>
+        ?>
     </left>
 </body>
 
