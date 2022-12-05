@@ -11,7 +11,8 @@
 </head>
 
 <body>
-
+    <div class=title-home>
+        <h1>Keystone Medical Wellness</h1>
     <left>
     <?PHP
       include 'index.php';
@@ -34,6 +35,7 @@
 
     ?>
     </left>
+    </div>
 </body>
 
 </html>

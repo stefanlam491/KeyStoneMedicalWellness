@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <div class=title-home>
+        <h1>Keystone Medical Wellness</h1>
+    </div>
     <div class=home>
         <div class="background"></div>
     </div>

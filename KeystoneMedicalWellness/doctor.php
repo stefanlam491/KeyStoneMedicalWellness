@@ -11,7 +11,8 @@
 </head>
 
 <body>
-
+    <div class=title-home>
+        <h1>Keystone Medical Wellness</h1>
     <left>
     <?PHP
       
@@ -35,6 +36,7 @@
       mysqli_close($link);
     ?>
     </left>
+    </div>
 </body>
 
 </html>

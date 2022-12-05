@@ -11,7 +11,8 @@
 </head>
 
 <body>
-
+    <div class=title-home>
+        <h1>Keystone Medical Wellness</h1>
     <left>
     <?PHP
       
@@ -40,6 +41,7 @@
 
     ?>
     </left>
+    </div>
 </body>
 
 </html>

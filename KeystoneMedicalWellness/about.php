@@ -26,7 +26,6 @@
         <div class="container">
           <h2>Stefan Lam</h2>
           <p class="title">Software Developer</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
           <p>stefan.lam491@csu.fullerton.edu</p>
           <p><button class="button">Contact</button></p>
         </div>
@@ -39,7 +38,6 @@
         <div class="container">
           <h2>Jacky Yun Cai</h2>
           <p class="title">Software Developer</p>
-          <p>njeknjkfwnfkjwefnjwkfnkwejf</p>
           <p>yun8caiii@csu.fullerton.edu</p>
           <p><button class="button">Contact</button></p>
         </div>
@@ -52,7 +50,6 @@
         <div class="container">
           <h2>Ashley Kueva</h2>
           <p class="title">Software Developer</p>
-          <p>write some shit</p>
           <p>ashleykuewa@csu.fullerton.edu</p>
           <p><button class="button">Contact</button></p>
         </div>
