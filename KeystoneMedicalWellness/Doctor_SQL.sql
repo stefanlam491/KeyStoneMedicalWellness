@@ -131,3 +131,5 @@ VALUES((SELECT Fname FROM Doctor
         WHERE (Doctor_ID = New.Doctor_ID)),"A doctor was updated.", 
         (SELECT Spec_Name FROM SPECIALTY WHERE ( Spec_ID = NEW.Spec_ID)), current_timestamp());
         
+DELETE FROM appointments WHERE Doc_Name = '1';
+        

@@ -34,35 +34,27 @@
         <form action="home.php" method="POST">
             <div class="form-group">
                 <label>First Name</label>
-                <input type="text" class="form-control" placeholder="Enter your first name" name="iname" />
+                <input type="text" class="form-control" placeholder="Enter your first name" name="iFname" />
             </div>
 
             <div class="form-group">
                 <label>Last Name</label>
-                <input type="text" class="form-control" placeholder="Enter your last name" name="iqty" />
+                <input type="text" class="form-control" placeholder="Enter your last name" name="iLname" />
             </div>
 
             <div class="form-group">
                 <label>Doctor Name</label>
-                <select class="form-control" placeholder= "Select Doctor" name="istatus">
-                    <option value="0">
-                        Dr.Epilly Lam
+                <select class="form-control" placeholder= "Select Doctor" name="iDoctor">
+                    <option value="Jones">
+                       Bob Jones
                     </option>
-                    <option value="1">
-                        Dr.Kueva
+                    <option value="Irwin">
+                       Steve Irwin
                     </option>
-                    <option value="2">
-                        Dr.BetRel Cai
+                    <option value="Stevens">
+                       Robert Stevens
                     </option>
-                    <option value="2">
-                        Dr. Woo Ju Style
-                    </option>
-                    <option value="2">
-                        Dr.Steohen Hawkings
-                    </option>
-                    <option value="2">
-                        Ur Mamma
-                    </option>
+                    
                 </select>
             </div>
             <div class="form-group">
@@ -89,12 +81,28 @@
         <?PHP
         // include 'index.php';
         include 'connection.php';
-        $link = mysqli_connect('127.0.0.1', 'root', 'Potato123');
+        // $link = mysqli_connect('127.0.0.1', 'root', 'Potato123');
 
-        if (!$link) {
-            die("Cannot pull up all doctor information! " . mysqli_error());
-        } else {
-            echo "Here are all the doctors serving this office! <br>";
+        // if (!$link) {
+        //     die("Cannot pull up all doctor information! " . mysqli_error());
+        // } else {
+        //     echo "Here are all the doctors serving this office! <br>";
+        // }
+        if(isset($_POST["btn"])) {
+            include "connection.php";
+            $Patient_ID ='P'. mt_rand(1111,9999);
+            $App_ID = 'A' . mt_rand(1111,9999);
+            $Fname_name=$_POST['iFname'];
+            $Lname=$_POST['iLname'];
+            $Doctor=$_POST['iDoctor'];
+            $date=$_POST['idate'];
+      
+  
+            $q="INSERT INTO Appointments(App_ID,Doc_Name,Pat_Name,Patient_ID,App_Date)
+                VALUES('$App_ID','$Doctor','$Lname','$Patient_ID','$date')";
+  
+            mysqli_query($link,$q);
+            header("location:appointment.php");
         }
 
         ?>
